@@ -54,6 +54,7 @@ section {
     z-index: 100;
     transition: 0.8s;
     transform-style: preserve-3d;
+    margin: 8px;
 }
 
 .container:hover {
