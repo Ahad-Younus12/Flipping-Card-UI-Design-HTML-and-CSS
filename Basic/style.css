@@ -17,7 +17,18 @@ section {
     perspective: 1000px;
 }
 
-section::before {
+.container-parent {
+    background-color: none;
+    height: 480px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-parent::before {
     content: "";
     position: absolute;
     width: 240px;
@@ -27,7 +38,7 @@ section::before {
     background: linear-gradient(90deg, #9c27b0, #f3f5f5);
 }
 
-section::after {
+.container-parent::after {
     content: "";
     position: absolute;
     width: 240px;
@@ -36,7 +47,6 @@ section::after {
     transform: translate(150px, 100px);
     background: linear-gradient(90deg, #9c27b0, #f3f5f5);
 }
-
 .container {
     height: 225px;
     width: 375px;
